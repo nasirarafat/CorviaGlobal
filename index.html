@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Corvia Global | International education partnerships from the UK</title>
+<title>Corvia Global | International education initiative from the UK</title>
 <meta name="description" content="Corvia Global connects UK universities with institutions worldwide through partnerships in higher education, digital and AI education, skills and research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -110,14 +110,63 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
 footer a{text-decoration:none;opacity:.85}footer a:hover{opacity:1}
 footer .wm{color:#f3f7fb;font-size:1.5rem}
 footer .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:1.1rem;padding-bottom:1.6rem;opacity:.75;font-size:.85rem}
+
+/* aesthetic layer */
+:root{--shadow:0 14px 36px -16px rgba(11,37,69,.28);--r:20px}
+body{-webkit-font-smoothing:antialiased}
+header.top{background:color-mix(in srgb,var(--bg) 80%,transparent);-webkit-backdrop-filter:saturate(1.5) blur(16px);backdrop-filter:saturate(1.5) blur(16px)}
+.btn{border-radius:999px;padding:.9rem 1.7rem;transition:transform .2s,box-shadow .2s}
+.btn.p,nav .cta{background:linear-gradient(135deg,#f3c14f,#e0a526);box-shadow:0 8px 20px -8px rgba(224,165,38,.7)}
+nav .cta{border-radius:999px;padding:.6rem 1.2rem}
+.btn:hover{transform:translateY(-2px);filter:none}
+.btn.s{border-color:rgba(255,255,255,.4)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 520px at 88% 8%,rgba(29,111,214,.5),transparent 62%),radial-gradient(700px 440px at 0% 100%,rgba(15,157,143,.38),transparent 60%),linear-gradient(135deg,var(--navy),var(--navy2))}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.16) 1px,transparent 1.2px);background-size:28px 28px;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 90%);mask-image:linear-gradient(to bottom,#000,transparent 90%)}
+.hero .wrap{position:relative}
+.pill{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);font-size:.88rem;margin-bottom:1.4rem}
+.pill::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(224,165,38,.25)}
+.hl{background:linear-gradient(90deg,#f6c453,#ffe9a8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.globe{filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+.globe circle.n{filter:drop-shadow(0 0 6px rgba(224,165,38,.9))}
+.strip{background:transparent;border:0;margin-top:-2.2rem;position:relative;z-index:2}
+.strip .wrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:1.6rem 1.8rem}
+section{padding:6rem 0}
+section.alt{background:linear-gradient(180deg,var(--alt),color-mix(in srgb,var(--alt) 40%,var(--bg)))}
+.kicker{display:inline-block;padding:.35rem .85rem;border-radius:999px;background:color-mix(in srgb,var(--blue) 12%,transparent);letter-spacing:.04em;text-transform:uppercase;font-size:.78rem;margin-bottom:1rem}
+.head h2,.h2{font-weight:800;letter-spacing:-.025em}
+.head h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;margin-top:1rem;background:linear-gradient(90deg,var(--gold),var(--teal))}
+.card,.pc,.fact,ol.steps li{border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.card{border-top:1px solid var(--line);position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--gold),var(--teal))}
+.card:hover,.pc:hover,.reg:hover,.fact:hover{transform:translateY(-5px)!important;box-shadow:0 22px 44px -18px rgba(11,37,69,.35)}
+.pc svg,.fact svg{padding:10px;width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--blue) 16%,transparent),color-mix(in srgb,var(--teal) 16%,transparent))}
+ol.steps li::before{background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;width:2.8rem;height:2.8rem;border-radius:16px;box-shadow:0 8px 18px -8px rgba(29,111,214,.7)}
+.reg{border:0;border-radius:var(--r);transition:transform .3s,box-shadow .3s;box-shadow:var(--shadow)}
+.reg:nth-child(1){background:linear-gradient(145deg,#0b2545,#1d4f91)}
+.reg:nth-child(2){background:linear-gradient(145deg,#0b2545,#0f7f78)}
+.reg:nth-child(3){background:linear-gradient(145deg,#0b2545,#2d6fb5)}
+.reg:nth-child(4){background:linear-gradient(145deg,#0b2545,#5a4aa0)}
+.reg h3::before{content:"";display:block;width:34px;height:4px;border-radius:4px;background:var(--gold);margin-bottom:.9rem}
+.std div{border-left:0;padding:1.3rem 1.4rem;background:var(--surface);border-radius:16px;border:1px solid var(--line)}
+.std b::before{content:"";display:inline-block;width:.6rem;height:.6rem;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--teal));margin-right:.6rem}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.2rem 1.5rem;margin-bottom:.9rem;box-shadow:var(--shadow)}
+.contact{position:relative;overflow:hidden;background:radial-gradient(700px 400px at 90% 0%,rgba(29,111,214,.45),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(15,157,143,.35),transparent 60%),var(--navy)}
+.contact .wrap{position:relative}
+form{border-radius:24px;box-shadow:0 30px 60px -24px rgba(0,0,0,.55)}
+input,select,textarea{border-radius:12px;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px color-mix(in srgb,var(--blue) 20%,transparent)}
+footer{background:linear-gradient(180deg,var(--navy),#050d18)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease,box-shadow .3s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 </style>
 </head>
 <body>
-<div class="util"><div class="wrap"><span>International Education Initiative, led from the United Kingdom</span><a href="mailto:info@corviaglobal.com">hello@corviaglobal.com</a></div></div>
+<div class="util"><div class="wrap"><span>International education partnerships, led from the United Kingdom</span><a href="mailto:hello@corviaglobal.com">hello@corviaglobal.com</a></div></div>
 <header class="top"><div class="wrap">
   <a class="logo" href="#top" aria-label="Corvia Global home">
     <svg viewBox="0 0 46 46" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d6fd6"/><stop offset="1" stop-color="#0f9d8f"/></linearGradient></defs><circle cx="23" cy="23" r="21" fill="none" stroke="url(#lg)" stroke-width="3.5" stroke-dasharray="104 28" transform="rotate(-30 23 23)" stroke-linecap="round"/><ellipse cx="23" cy="23" rx="9" ry="21" fill="none" stroke="url(#lg)" stroke-width="1.6" opacity=".6"/><path d="M2 23h42" stroke="url(#lg)" stroke-width="1.6" opacity=".6"/><path d="M7 33C14 20 28 12 40 14" fill="none" stroke="#e0a526" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="14" r="3.6" fill="#e0a526"/></svg>
-    <span><span class="wm">Corvia<i>Global</i></span><span class="tag">Education Initiative</span></span>
+    <span><span class="wm">Corvia<i>Global</i></span><span class="tag">Education Partnerships</span></span>
   </a>
   <button class="menu" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
   <nav id="nav" aria-label="Main"><a href="#about">About</a><a href="#services">Who we serve</a><a href="#programmes">Programmes</a><a href="#process">Process</a><a href="#regions">Reach</a><a href="#faq">FAQ</a><a class="cta" href="#contact">Contact us</a></nav>
@@ -126,7 +175,8 @@ footer .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:1.1rem;padd
 <main id="top">
 <div class="hero"><div class="wrap">
   <div>
-    <h1>Connecting UK education with the world</h1>
+    <span class="pill">International education partnerships</span>
+    <h1>Connecting UK education with the <span class="hl">world</span></h1>
     <p>Corvia Global designs and manages partnerships between UK universities and institutions in growing education markets, covering higher education collaboration, digital and AI education, skills development and research.</p>
     <div class="btns"><a class="btn p" href="#contact">Start a partnership</a><a class="btn s" href="#programmes">Explore programmes</a></div>
   </div>
@@ -233,15 +283,21 @@ footer .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:1.1rem;padd
 </div></section>
 
 <footer><div class="wrap fg">
-  <div><span class="wm">Corvia<i>Global</i></span><p style="opacity:.8;margin:.8rem 0 0;max-width:22rem">International education partnerships led from the United Kingdom.</p></div>
+  <div><span class="wm">Corvia<i>Global</i></span><p style="opacity:.8;margin:.8rem 0 0;max-width:22rem">International education initiative led from the United Kingdom.</p></div>
   <div><h4>Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#programmes">Programmes</a></li><li><a href="#process">Process</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-  <div><h4>Contact</h4><ul><li><a href="mailto:hello@corviaglobal.com">hello@corviaglobal.com</a></li><li>United Kingdom</li></ul></div>
+  <div><h4>Contact</h4><ul><li><a href="mailto:info@corviaglobal.com">info@corviaglobal.com</a></li><li>United Kingdom</li></ul></div>
 </div>
 <div class="wrap legal">Corvia Global is being established as a UK private limited company. Partnerships, funding and approvals are explored with each institution and are never assumed.</div></footer>
 <script>
 function send(e){e.preventDefault();var f=e.target,v=function(k){return f.elements[k].value};
 var b="Name: "+v("n")+"\nOrganisation: "+v("o")+"\nEnquiring as: "+v("t")+"\n\n"+v("m");
 location.href="mailto:hello@corviaglobal.com?subject="+encodeURIComponent("Partnership enquiry from "+v("o"))+"&body="+encodeURIComponent(b);return false}
+</script>
+<script>
+(function(){if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+var els=document.querySelectorAll('.card,.pc,.fact,ol.steps li,.reg,.std div,.head,details');
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
+els.forEach(function(e){e.classList.add('rv');io.observe(e)})})();
 </script>
 </body>
 </html>
